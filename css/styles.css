@@ -178,10 +178,22 @@ body {
   color: var(--description-text-color);
 }
 /* Specialization */
+.specialization .container {
+  margin-bottom: 94px;
+}
+.specialization-list {
+  display: flex;
+  justify-content: space-between;
+}
+/* .specialization-items:not(:last-child) {
+  margin-right: 30px;
+} */
 .specialization {
   background-color: var(--main-background-color);
 }
 .specialization-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
