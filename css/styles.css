@@ -290,21 +290,56 @@ body {
 .works {
   background-color: var(--main-background-color);
 }
-
 .list-button:hover,
 .list-button:focus,
 .list-button:active {
   background-color: var(--accent-color);
   color: var(--button-color);
 }
+.works .container {
+  margin-top: 94px;
+  margin-bottom: 94px;
+}
+.container .work {
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu {
+  display: flex;
+  margin-bottom: 34px;
+  justify-content: center;
+}
+.menu .list-items:not(:last-child) {
+  margin-right: 8px;
+}
+.work-items:nth-child(3n) {
+  margin-right: 0px;
+}
+.work-items {
+  display: flex;
+  width: 370px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-right: 30px;
+}
+.work-items-content {
+  padding: 24px 20px;
+}
 .list-button {
+  padding: 6px 22px;
+  border-radius: 4px;
+  border: 0px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  text-align: center;
   letter-spacing: 0.03em;
   color: var(--list-button-color);
 }
 .work-title {
+  margin-bottom: 4px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
