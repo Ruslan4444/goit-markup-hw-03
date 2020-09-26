@@ -253,7 +253,18 @@ body {
 }
 /* footer */
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--footer-background-color);
+}
+.container .adress-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.footer .link:not(:last-child) {
+  margin-bottom: 9px;
 }
 .adress-map,
 .adress-item {
