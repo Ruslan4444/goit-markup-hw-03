@@ -18,7 +18,12 @@
   --adress-text-color: #ffffff;
   --adress-item-color: rgba(255, 255, 255, 0.6);
 }
-
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+}
 body {
   font-family: var(--main-font);
 }
@@ -31,8 +36,41 @@ body {
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: auto;
+}
 /* header */
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+.header .container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+}
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+.site-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+.contacts-items:not(:last-child) {
+  padding-right: 50px;
+}
 .logo {
+  margin-right: 93px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
