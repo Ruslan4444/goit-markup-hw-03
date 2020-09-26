@@ -112,6 +112,8 @@ body {
 }
 /* hero */
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 
   background-color: var(--hero-background-color);
@@ -204,9 +206,28 @@ body {
 
 /* team */
 .ourteam {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.team-items:not(:last-child) {
+  margin-right: 30px;
+}
+.team-list-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 59px;
+  padding-right: 59px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+}
+.ourteam {
   background-color: var(--ourteam-background-color);
 }
 .team-title {
+  margin-bottom: 50px;
+
   font-weight: 700;
   font-size: 36px;
   line-height: 1.167;
@@ -215,6 +236,8 @@ body {
   color: var(--title-text-color);
 }
 .team-member {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.188;
