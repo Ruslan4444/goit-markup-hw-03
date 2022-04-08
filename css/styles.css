@@ -30,6 +30,9 @@ body {
 .list {
   list-style: none;
 }
+ul {
+  padding: 0px;
+}
 .link {
   text-decoration: none;
 
@@ -57,15 +60,22 @@ body {
   background-color: var(--btn-hover-bgcolor);
 }
 /* ----------- HEADER ------------*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 /* ----------- LOGO ------------*/
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   font-family: 'Raleway', sans-serif;
   color: #000000;
-
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -103,7 +113,13 @@ body {
   display: flex;
   margin-left: auto;
 }
+.contacts-item:not(:last-child) {
+  margin-right: 50px;
+}
 .contacts-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
 }
 .contacts-link:hover,
