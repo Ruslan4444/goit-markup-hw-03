@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
@@ -16,34 +20,36 @@
   <body>
     <!-- HEADER -->
     <header class="header">
-      <a href="./index.html" class="logo link"
-        ><span class="logo-text">Web</span>Studio</a
-      >
-      <nav class="nav">
-        <ul class="nav-list list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link link current">Студия</a>
+      <div class="header-container container">
+        <a href="./index.html" class="logo link"
+          ><span class="logo-text">Web</span>Studio</a
+        >
+        <nav class="nav">
+          <ul class="nav-list list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link link current">Студия</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link link">Портфолио</a>
+            </li>
+            <li class="nav-item">
+              <a href="" class="nav-link link">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="contacts-list list">
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts-link link"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-item">
-            <a href="./portfolio.html" class="nav-link link">Портфолио</a>
-          </li>
-          <li class="nav-item">
-            <a href="" class="nav-link link">Контакты</a>
+          <li class="contacts-item">
+            <a href="tel:+380961111111" class="contacts-link link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="contacts-list list">
-        <li class="contacts-item">
-          <a href="mailto:info@devstudio.com" class="contacts-link link"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contacts-item">
-          <a href="tel:+380961111111" class="contacts-link link"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
     <!-- MAIN -->
     <main>
