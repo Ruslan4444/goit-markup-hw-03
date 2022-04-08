@@ -23,7 +23,7 @@ body {
 }
 .container {
   width: 1200px;
-  margin: auto;
+  margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -127,12 +127,21 @@ ul {
   color: var(--accent-color);
 }
 /* ----------- HERO ------------*/
+.hero-container {
+  text-align: center;
+}
+.hero-btn {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 10px 32px;
+}
 .hero {
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
-  color: var(--primary-color);
+  margin-bottom: 30px;
 
+  color: var(--primary-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
