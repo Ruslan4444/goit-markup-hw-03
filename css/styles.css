@@ -176,7 +176,7 @@ img {
   display: flex;
 }
 .advantages-item {
-  width: calc((100% - 30px * 3) / 4);
+  flex-basis: calc(100% / 4);
 }
 .advantages-item:not(:last-child) {
   margin-right: 30px;
@@ -195,9 +195,23 @@ img {
   line-height: 1.71;
 }
 /* ----------- WHAT WE DO ------------*/
+.work {
+  padding-bottom: 94px;
+}
+.work-list {
+  display: flex;
+}
+.work-list-item {
+  flex-basis: calc(100% / 3);
+}
+.work-list-item:not(:last-child) {
+  margin-right: 30px;
+}
 .work-title {
-  color: var(--tittle-text-color);
+  margin-bottom: 50px;
+  text-align: center;
 
+  color: var(--tittle-text-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
