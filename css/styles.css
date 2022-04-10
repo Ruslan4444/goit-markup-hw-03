@@ -27,12 +27,6 @@ img {
   display: block;
   max-width: 100%;
 }
-.container {
-  width: 1230px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .list {
   margin: 0;
   padding: 0;
@@ -59,7 +53,12 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 /* BUTTON CSS */
 .btn {
   border: 0;
@@ -169,9 +168,23 @@ img {
   text-transform: uppercase;
 }
 /* ----------- ADVANTAGES ------------*/
+.advantages {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.advantages-list {
+  display: flex;
+}
+.advantages-item {
+  width: calc((100% - 30px * 3) / 4);
+}
+.advantages-item:not(:last-child) {
+  margin-right: 30px;
+}
 .advantages-item-title {
-  color: var(--tittle-text-color);
+  margin-bottom: 10px;
 
+  color: var(--tittle-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
