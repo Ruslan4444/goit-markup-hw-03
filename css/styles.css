@@ -117,9 +117,11 @@ img {
   color: var(--accent-color);
 }
 /* ----------- nav-list ------------*/
+.nav {
+  margin-left: 93px;
+}
 .nav-list {
   display: flex;
-  margin-left: 93px;
 }
 .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -165,11 +167,18 @@ img {
   box-shadow: 0px 4px 4px var(--hero-btn-shadow);
 }
 .hero {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
+
   background-color: var(--secondary-bg-color);
 }
 .hero-title {
+  display: block;
+  width: 696px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
   color: var(--primary-color);
   font-weight: 900;
@@ -230,6 +239,10 @@ img {
 .team-list {
   display: flex;
 }
+.team-item-contant {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .team-list-item {
   flex-basis: calc(100% / 4);
   border-radius: 0px 0px 4px 4px;
@@ -249,7 +262,6 @@ img {
   line-height: 1.17;
 }
 .team-item-title {
-  margin-top: 30px;
   margin-bottom: 10px;
   text-align: center;
 
@@ -259,8 +271,6 @@ img {
   line-height: 1.19;
 }
 .team-item-text {
-  margin-bottom: 30px;
-
   font-size: 16px;
   line-height: 1.17;
   text-align: center;
@@ -294,7 +304,7 @@ img {
 }
 
 /* ----------- PORTFOLIO ------------*/
-.page-list-btn {
+.filter-btn {
   display: inline-block;
   padding: 6px 22px;
   border-radius: 4px;
@@ -307,23 +317,19 @@ img {
 
   border: none;
 }
-.page-list-item:not(:last-child) {
+.filter-item:not(:last-child) {
   margin-right: 8px;
 }
-.page-list-btn:hover,
-.page-list-btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-color);
 }
-.page-list-btn.active {
+.filter-btn.active {
   background-color: var(--accent-color);
   color: var(--primary-color);
 }
-.page {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-.page-list {
+.filter-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
@@ -338,12 +344,13 @@ img {
   flex-basis: calc(100% / 3 - 30px);
   margin-top: 30px;
   margin-left: 30px;
-
-  border: 1px solid;
-  border-color: var(--gallery-item-border-color);
 }
 .item-contant {
   padding: 20px 24px;
+
+  border-left: 1px solid var(--gallery-item-border-color);
+  border-right: 1px solid var(--gallery-item-border-color);
+  border-bottom: 1px solid var(--gallery-item-border-color);
 }
 .gallery-link:hover,
 .gallery-link:focus {
